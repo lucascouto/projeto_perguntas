@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import './resultado.dart';
 import './questao.dart';
 import './resposta.dart';
 
@@ -55,12 +56,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
                       .toList()
                 ],
               )
-            : Center(
-                child: Text(
-                  "Parabéns!",
-                  style: TextStyle(fontSize: 28),
-                ),
-              ),
+            : Resultado(),
       ),
     );
   }
